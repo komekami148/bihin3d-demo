@@ -450,6 +450,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
       <button id="btnCamOverview">全景</button>
       <button id="btnCamTop">各階真上</button>
       <button id="btnCamOblique">各階斜め45°</button>
+      <button id="btnWalkMode">ウォークスルー</button>
       <button id="btnPng">PNG保存</button>
     </div>
 
@@ -1532,7 +1533,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
 
 } )();
 </script>
-<script>window.EMBEDDED_DATA = {"meta":{"project":"備品配置デモ（架空データ）","version":"demo-public-0.1","unit":"m","updated":"2026-07-16"},"roomCategories":[{"id":"kyoshitsu","label":"居室","color":"#F2C4CF"},{"id":"kyoyo","label":"共用","color":"#BCE0F0"},{"id":"backyard","label":"バックヤード","color":"#DCDCDC"},{"id":"corridor","label":"廊下","color":"#EEF3F6"},{"id":"courtyard","label":"中庭","color":"#CFE8C9"}],"itemCategories":[{"id":"bed","label":"ベッド","color":"#3B6FD4"},{"id":"furniture","label":"家具","color":"#8A5A2B"},{"id":"appliance","label":"家電","color":"#2E8B57"}],"itemTypes":[{"id":"kaigo_bed","label":"介護ベッド","category":"bed","size":[1,2.1,0.5],"unitPrice":180000},{"id":"locker","label":"ロッカー","category":"furniture","size":[0.6,0.5,1.8],"unitPrice":35000},{"id":"ob_table","label":"オーバーテーブル","category":"furniture","size":[0.65,0.4,0.75],"unitPrice":28000},{"id":"din_set","label":"食堂テーブルセット(4人掛)","category":"furniture","size":[1.5,1.5,0.75],"unitPrice":108000},{"id":"sofa","label":"ソファ(2人掛)","category":"furniture","size":[1.8,0.8,0.8],"unitPrice":95000},{"id":"chair","label":"事務椅子","category":"furniture","size":[0.5,0.5,0.9],"unitPrice":12000},{"id":"tv55","label":"テレビ55型(壁寄せ)","category":"appliance","size":[1.25,0.4,1.2],"unitPrice":120000},{"id":"fridge","label":"冷蔵庫","category":"appliance","size":[0.6,0.65,1.6],"unitPrice":85000}],"roomTemplates":[{"id":"t_kyo1","label":"居室1人タイプ","items":[{"type":"kaigo_bed","pos":[0.3,0.5],"rot":0,"procure":"new"},{"type":"locker","pos":[2.8,0.2],"rot":0,"procure":"reuse","origin":"現施設居室"},{"type":"ob_table","pos":[1.6,0.9],"rot":0,"procure":"new"}]}],"floors":[{"level":1,"label":"1F","height":3.2},{"level":2,"label":"2F","height":3.2},{"level":3,"label":"3F","height":3.2},{"level":4,"label":"R階","height":3.2}],"rooms":[{"id":"2F-01","name":"居室201(仮)","floor":2,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-02","name":"居室202(仮)","floor":2,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-03","name":"居室203(仮)","floor":2,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-04","name":"居室204(仮)","floor":2,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-05","name":"居室205(仮)","floor":2,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-06","name":"居室206(仮)","floor":2,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-07","name":"居室207(仮)","floor":2,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-08","name":"居室208(仮)","floor":2,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-09","name":"居室209(仮)","floor":2,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-10","name":"居室210(仮)","floor":2,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-11","name":"居室211(仮)","floor":2,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-12","name":"居室212(仮)","floor":2,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-13","name":"居室213(仮)","floor":2,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-14","name":"居室214(仮)","floor":2,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-15","name":"居室215(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-16","name":"居室216(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-17","name":"居室217(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-18","name":"居室218(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-19","name":"居室219(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-20","name":"居室220(仮)","floor":2,"category":"kyoshitsu","polygon":[[4,0],[7.7,0],[7.7,4],[4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-21","name":"居室221(仮)","floor":2,"category":"kyoshitsu","polygon":[[7.7,0],[11.4,0],[11.4,4],[7.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-22","name":"居室222(仮)","floor":2,"category":"kyoshitsu","polygon":[[11.4,0],[15.1,0],[15.1,4],[11.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-23","name":"居室223(仮)","floor":2,"category":"kyoshitsu","polygon":[[15.1,0],[18.8,0],[18.8,4],[15.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-24","name":"居室224(仮)","floor":2,"category":"kyoshitsu","polygon":[[18.8,0],[22.5,0],[22.5,4],[18.8,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-25","name":"居室225(仮)","floor":2,"category":"kyoshitsu","polygon":[[22.5,0],[26.2,0],[26.2,4],[22.5,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-26","name":"居室226(仮)","floor":2,"category":"kyoshitsu","polygon":[[26.2,0],[29.9,0],[29.9,4],[26.2,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-27","name":"居室227(仮)","floor":2,"category":"kyoshitsu","polygon":[[29.9,0],[33.6,0],[33.6,4],[29.9,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-28","name":"居室228(仮)","floor":2,"category":"kyoshitsu","polygon":[[33.6,0],[37.3,0],[37.3,4],[33.6,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-29","name":"居室229(仮)","floor":2,"category":"kyoshitsu","polygon":[[37.3,0],[41,0],[41,4],[37.3,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-30","name":"居室230(仮)","floor":2,"category":"kyoshitsu","polygon":[[41,0],[44.7,0],[44.7,4],[41,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-31","name":"居室231(仮)","floor":2,"category":"kyoshitsu","polygon":[[44.7,0],[48.4,0],[48.4,4],[44.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-32","name":"居室232(仮)","floor":2,"category":"kyoshitsu","polygon":[[48.4,0],[52.1,0],[52.1,4],[48.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-33","name":"居室233(仮)","floor":2,"category":"kyoshitsu","polygon":[[52.1,0],[55.8,0],[55.8,4],[52.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-34","name":"居室234(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-35","name":"居室235(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-36","name":"居室236(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-37","name":"居室237(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-38","name":"居室238(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-39","name":"階段室(北西)","floor":2,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"2F-40","name":"倉庫","floor":2,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"2F-41","name":"階段室(北東)","floor":2,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"2F-42","name":"WC","floor":2,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"2F-43","name":"洗濯室","floor":2,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"2F-44","name":"リネン室","floor":2,"category":"backyard","polygon":[[0,0],[4,0],[4,4],[0,4]]},{"id":"2F-45","name":"汚物処理室","floor":2,"category":"backyard","polygon":[[55.8,0],[58,0],[58,4],[55.8,4]]},{"id":"2F-46","name":"階段室(南東)","floor":2,"category":"backyard","polygon":[[58,0],[62,0],[62,4],[58,4]]},{"id":"2F-47","name":"廊下","floor":2,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"2F-48","name":"廊下","floor":2,"category":"corridor","polygon":[[0,4],[62,4],[62,6.3],[0,6.3]]},{"id":"2F-49","name":"廊下","floor":2,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"2F-50","name":"廊下","floor":2,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"2F-51","name":"廊下","floor":2,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"2F-52","name":"廊下","floor":2,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"2F-53","name":"廊下","floor":2,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"2F-54","name":"廊下","floor":2,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"2F-55","name":"廊下","floor":2,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"2F-56","name":"廊下","floor":2,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"2F-57","name":"廊下","floor":2,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"2F-58","name":"廊下","floor":2,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"2F-59","name":"中庭(西)","floor":2,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"2F-60","name":"テラス(東)","floor":2,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"2F-61","name":"階段・EVホール","floor":2,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"2F-62","name":"浴室・脱衣室","floor":2,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"2F-63","name":"セミパブリックスペース","floor":2,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"2F-64","name":"談話コーナー","floor":2,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"2F-65","name":"多目的室(仮)","floor":2,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"2F-66","name":"食堂(仮)","floor":2,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"3F-01","name":"居室301(仮)","floor":3,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-02","name":"居室302(仮)","floor":3,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-03","name":"居室303(仮)","floor":3,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-04","name":"居室304(仮)","floor":3,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-05","name":"居室305(仮)","floor":3,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-06","name":"居室306(仮)","floor":3,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-07","name":"居室307(仮)","floor":3,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-08","name":"居室308(仮)","floor":3,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-09","name":"居室309(仮)","floor":3,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-10","name":"居室310(仮)","floor":3,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-11","name":"居室311(仮)","floor":3,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-12","name":"居室312(仮)","floor":3,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-13","name":"居室313(仮)","floor":3,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-14","name":"居室314(仮)","floor":3,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-15","name":"居室315(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-16","name":"居室316(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-17","name":"居室317(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-18","name":"居室318(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-19","name":"居室319(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-20","name":"居室320(仮)","floor":3,"category":"kyoshitsu","polygon":[[4,0],[7.7,0],[7.7,4],[4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-21","name":"居室321(仮)","floor":3,"category":"kyoshitsu","polygon":[[7.7,0],[11.4,0],[11.4,4],[7.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-22","name":"居室322(仮)","floor":3,"category":"kyoshitsu","polygon":[[11.4,0],[15.1,0],[15.1,4],[11.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-23","name":"居室323(仮)","floor":3,"category":"kyoshitsu","polygon":[[15.1,0],[18.8,0],[18.8,4],[15.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-24","name":"居室324(仮)","floor":3,"category":"kyoshitsu","polygon":[[18.8,0],[22.5,0],[22.5,4],[18.8,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-25","name":"居室325(仮)","floor":3,"category":"kyoshitsu","polygon":[[22.5,0],[26.2,0],[26.2,4],[22.5,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-26","name":"居室326(仮)","floor":3,"category":"kyoshitsu","polygon":[[26.2,0],[29.9,0],[29.9,4],[26.2,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-27","name":"居室327(仮)","floor":3,"category":"kyoshitsu","polygon":[[29.9,0],[33.6,0],[33.6,4],[29.9,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-28","name":"居室328(仮)","floor":3,"category":"kyoshitsu","polygon":[[33.6,0],[37.3,0],[37.3,4],[33.6,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-29","name":"居室329(仮)","floor":3,"category":"kyoshitsu","polygon":[[37.3,0],[41,0],[41,4],[37.3,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-30","name":"居室330(仮)","floor":3,"category":"kyoshitsu","polygon":[[41,0],[44.7,0],[44.7,4],[41,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-31","name":"居室331(仮)","floor":3,"category":"kyoshitsu","polygon":[[44.7,0],[48.4,0],[48.4,4],[44.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-32","name":"居室332(仮)","floor":3,"category":"kyoshitsu","polygon":[[48.4,0],[52.1,0],[52.1,4],[48.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-33","name":"居室333(仮)","floor":3,"category":"kyoshitsu","polygon":[[52.1,0],[55.8,0],[55.8,4],[52.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-34","name":"居室334(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-35","name":"居室335(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-36","name":"居室336(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-37","name":"居室337(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-38","name":"居室338(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-39","name":"階段室(北西)","floor":3,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"3F-40","name":"倉庫","floor":3,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"3F-41","name":"階段室(北東)","floor":3,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"3F-42","name":"WC","floor":3,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"3F-43","name":"洗濯室","floor":3,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"3F-44","name":"リネン室","floor":3,"category":"backyard","polygon":[[0,0],[4,0],[4,4],[0,4]]},{"id":"3F-45","name":"汚物処理室","floor":3,"category":"backyard","polygon":[[55.8,0],[58,0],[58,4],[55.8,4]]},{"id":"3F-46","name":"階段室(南東)","floor":3,"category":"backyard","polygon":[[58,0],[62,0],[62,4],[58,4]]},{"id":"3F-47","name":"廊下","floor":3,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"3F-48","name":"廊下","floor":3,"category":"corridor","polygon":[[0,4],[62,4],[62,6.3],[0,6.3]]},{"id":"3F-49","name":"廊下","floor":3,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"3F-50","name":"廊下","floor":3,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"3F-51","name":"廊下","floor":3,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"3F-52","name":"廊下","floor":3,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"3F-53","name":"廊下","floor":3,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"3F-54","name":"廊下","floor":3,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"3F-55","name":"廊下","floor":3,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"3F-56","name":"廊下","floor":3,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"3F-57","name":"廊下","floor":3,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"3F-58","name":"廊下","floor":3,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"3F-59","name":"中庭(西)","floor":3,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"3F-60","name":"テラス(東)","floor":3,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"3F-61","name":"階段・EVホール","floor":3,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"3F-62","name":"浴室・脱衣室","floor":3,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"3F-63","name":"セミパブリックスペース","floor":3,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"3F-64","name":"談話コーナー","floor":3,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"3F-65","name":"多目的室(仮)","floor":3,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"3F-66","name":"食堂(仮)","floor":3,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"1F-01","name":"居室101(仮)","floor":1,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-02","name":"居室102(仮)","floor":1,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-03","name":"居室103(仮)","floor":1,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-04","name":"居室104(仮)","floor":1,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-05","name":"居室105(仮)","floor":1,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-06","name":"居室106(仮)","floor":1,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-07","name":"居室107(仮)","floor":1,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-08","name":"居室108(仮)","floor":1,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-09","name":"居室109(仮)","floor":1,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-10","name":"居室110(仮)","floor":1,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-11","name":"居室111(仮)","floor":1,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-12","name":"居室112(仮)","floor":1,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-13","name":"居室113(仮)","floor":1,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-14","name":"居室114(仮)","floor":1,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-15","name":"居室115(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-16","name":"居室116(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-17","name":"居室117(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-18","name":"居室118(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-19","name":"居室119(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-20","name":"居室120(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-21","name":"居室121(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-22","name":"居室122(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-23","name":"居室123(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-24","name":"居室124(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-25","name":"階段室(北西)","floor":1,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"1F-26","name":"倉庫","floor":1,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"1F-27","name":"階段室(北東)","floor":1,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"1F-28","name":"WC","floor":1,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"1F-29","name":"洗濯室","floor":1,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"1F-30","name":"廊下","floor":1,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"1F-31","name":"廊下","floor":1,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"1F-32","name":"廊下","floor":1,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"1F-33","name":"廊下","floor":1,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"1F-34","name":"廊下","floor":1,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"1F-35","name":"廊下","floor":1,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"1F-36","name":"廊下","floor":1,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"1F-37","name":"廊下","floor":1,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"1F-38","name":"廊下","floor":1,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"1F-39","name":"廊下","floor":1,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"1F-40","name":"廊下","floor":1,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"1F-41","name":"中庭(西)","floor":1,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"1F-42","name":"テラス(東)","floor":1,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"1F-43","name":"階段・EVホール","floor":1,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"1F-44","name":"浴室・脱衣室","floor":1,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"1F-45","name":"セミパブリックスペース","floor":1,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"1F-46","name":"談話コーナー","floor":1,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"1F-47","name":"機能訓練室(仮)","floor":1,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"1F-48","name":"食堂(仮)","floor":1,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"1F-49","name":"デイサービス室(仮)","floor":1,"category":"kyoyo","polygon":[[0,0],[16,0],[16,6.3],[0,6.3]],"items":[{"type":"din_set","pos":[2,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[7,1.5],"rot":0,"procure":"new"}]},{"id":"1F-50","name":"エントランスホール","floor":1,"category":"kyoyo","polygon":[[16,0],[30,0],[30,6.3],[16,6.3]],"items":[{"type":"sofa","pos":[3,2],"rot":0,"procure":"new"},{"type":"sofa","pos":[8,2],"rot":0,"procure":"new"}]},{"id":"1F-51","name":"事務室","floor":1,"category":"backyard","polygon":[[30,0],[40,0],[40,6.3],[30,6.3]],"items":[{"type":"chair","pos":[1,1],"rot":0,"procure":"new"},{"type":"chair","pos":[1.9,1],"rot":0,"procure":"new"},{"type":"chair","pos":[2.8,1],"rot":0,"procure":"new"},{"type":"chair","pos":[3.7,1],"rot":0,"procure":"new"},{"type":"chair","pos":[4.6,1],"rot":0,"procure":"new"},{"type":"chair","pos":[5.5,1],"rot":0,"procure":"new"}]},{"id":"1F-52","name":"医務室(仮)","floor":1,"category":"kyoyo","polygon":[[40,0],[46,0],[46,6.3],[40,6.3]],"items":[{"type":"kaigo_bed","pos":[0.4,0.5],"rot":0,"procure":"new"},{"type":"chair","pos":[2.5,1],"rot":0,"procure":"new"}]},{"id":"1F-53","name":"厨房","floor":1,"category":"backyard","polygon":[[46,0],[58,0],[58,6.3],[46,6.3]],"items":[{"type":"fridge","pos":[0.3,0.3],"rot":0,"procure":"new"},{"type":"fridge","pos":[1.2,0.3],"rot":0,"procure":"new"}]},{"id":"1F-54","name":"階段室(南東)","floor":1,"category":"backyard","polygon":[[58,0],[62,0],[62,6.3],[58,6.3]]},{"id":"4F-01","name":"塔屋(EV機械室・階段)","floor":4,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"4F-02","name":"階段室(北西)","floor":4,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"4F-03","name":"階段室(南東)","floor":4,"category":"backyard","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]]},{"id":"4F-04","name":"屋上緑化(仮)","floor":4,"category":"courtyard","polygon":[[8,8.6],[20,8.6],[20,18.4],[8,18.4]]},{"id":"4F-05","name":"屋上緑化(仮)","floor":4,"category":"courtyard","polygon":[[36,8.6],[53,8.6],[53,14.15],[36,14.15]]},{"id":"4F-06","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[0,0],[62,0],[62,6.3],[0,6.3]]},{"id":"4F-07","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[0,6.3],[8,6.3],[8,30],[0,30]]},{"id":"4F-08","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[4,30],[8,30],[8,34],[4,34]]},{"id":"4F-09","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[8,18.4],[58,18.4],[58,34],[8,34]]},{"id":"4F-10","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[58,18.4],[62,18.4],[62,34],[58,34]]},{"id":"4F-11","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[20,6.3],[22,6.3],[22,18.4],[20,18.4]]},{"id":"4F-12","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[28,6.3],[36,6.3],[36,18.4],[28,18.4]]},{"id":"4F-13","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[22,12],[28,12],[28,18.4],[22,18.4]]},{"id":"4F-14","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[36,14.15],[58,14.15],[58,18.4],[36,18.4]]},{"id":"4F-15","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[8,6.3],[20,6.3],[20,8.6],[8,8.6]]},{"id":"4F-16","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[36,6.3],[53,6.3],[53,8.6],[36,8.6]]},{"id":"4F-17","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[53,6.3],[58,6.3],[58,14.15],[53,14.15]]},{"id":"4F-18","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[58,10],[62,10],[62,18.4],[58,18.4]]}]};</script>
+<script>window.EMBEDDED_DATA = {"meta":{"project":"備品配置デモ（架空データ）","version":"demo-public-0.1","unit":"m","updated":"2026-07-17"},"roomCategories":[{"id":"kyoshitsu","label":"居室","color":"#F2C4CF"},{"id":"kyoyo","label":"共用","color":"#BCE0F0"},{"id":"backyard","label":"バックヤード","color":"#DCDCDC"},{"id":"corridor","label":"廊下","color":"#EEF3F6"},{"id":"courtyard","label":"中庭","color":"#CFE8C9"}],"itemCategories":[{"id":"bed","label":"ベッド","color":"#3B6FD4"},{"id":"furniture","label":"家具","color":"#8A5A2B"},{"id":"appliance","label":"家電","color":"#2E8B57"}],"itemTypes":[{"id":"kaigo_bed","label":"介護ベッド","category":"bed","size":[1,2.1,0.5],"unitPrice":180000},{"id":"locker","label":"ロッカー","category":"furniture","size":[0.6,0.5,1.8],"unitPrice":35000},{"id":"ob_table","label":"オーバーテーブル","category":"furniture","size":[0.65,0.4,0.75],"unitPrice":28000},{"id":"din_set","label":"食堂テーブルセット(4人掛)","category":"furniture","size":[1.5,1.5,0.75],"unitPrice":108000},{"id":"sofa","label":"ソファ(2人掛)","category":"furniture","size":[1.8,0.8,0.8],"unitPrice":95000},{"id":"chair","label":"事務椅子","category":"furniture","size":[0.5,0.5,0.9],"unitPrice":12000},{"id":"tv55","label":"テレビ55型(壁寄せ)","category":"appliance","size":[1.25,0.4,1.2],"unitPrice":120000},{"id":"fridge","label":"冷蔵庫","category":"appliance","size":[0.6,0.65,1.6],"unitPrice":85000}],"roomTemplates":[{"id":"t_kyo1","label":"居室1人タイプ","items":[{"type":"kaigo_bed","pos":[0.3,0.5],"rot":0,"procure":"new"},{"type":"locker","pos":[2.8,0.2],"rot":0,"procure":"reuse","origin":"現施設居室"},{"type":"ob_table","pos":[1.6,0.9],"rot":0,"procure":"new"}]}],"floors":[{"level":1,"label":"1F","height":3.2},{"level":2,"label":"2F","height":3.2},{"level":3,"label":"3F","height":3.2},{"level":4,"label":"R階","height":3.2}],"rooms":[{"id":"2F-01","name":"居室201(仮)","floor":2,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-02","name":"居室202(仮)","floor":2,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-03","name":"居室203(仮)","floor":2,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-04","name":"居室204(仮)","floor":2,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-05","name":"居室205(仮)","floor":2,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-06","name":"居室206(仮)","floor":2,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-07","name":"居室207(仮)","floor":2,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-08","name":"居室208(仮)","floor":2,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-09","name":"居室209(仮)","floor":2,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-10","name":"居室210(仮)","floor":2,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-11","name":"居室211(仮)","floor":2,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-12","name":"居室212(仮)","floor":2,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-13","name":"居室213(仮)","floor":2,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-14","name":"居室214(仮)","floor":2,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"2F-15","name":"居室215(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-16","name":"居室216(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-17","name":"居室217(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-18","name":"居室218(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-19","name":"居室219(仮)","floor":2,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"2F-20","name":"居室220(仮)","floor":2,"category":"kyoshitsu","polygon":[[4,0],[7.7,0],[7.7,4],[4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-21","name":"居室221(仮)","floor":2,"category":"kyoshitsu","polygon":[[7.7,0],[11.4,0],[11.4,4],[7.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-22","name":"居室222(仮)","floor":2,"category":"kyoshitsu","polygon":[[11.4,0],[15.1,0],[15.1,4],[11.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-23","name":"居室223(仮)","floor":2,"category":"kyoshitsu","polygon":[[15.1,0],[18.8,0],[18.8,4],[15.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-24","name":"居室224(仮)","floor":2,"category":"kyoshitsu","polygon":[[18.8,0],[22.5,0],[22.5,4],[18.8,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-25","name":"居室225(仮)","floor":2,"category":"kyoshitsu","polygon":[[22.5,0],[26.2,0],[26.2,4],[22.5,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-26","name":"居室226(仮)","floor":2,"category":"kyoshitsu","polygon":[[26.2,0],[29.9,0],[29.9,4],[26.2,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-27","name":"居室227(仮)","floor":2,"category":"kyoshitsu","polygon":[[29.9,0],[33.6,0],[33.6,4],[29.9,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-28","name":"居室228(仮)","floor":2,"category":"kyoshitsu","polygon":[[33.6,0],[37.3,0],[37.3,4],[33.6,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-29","name":"居室229(仮)","floor":2,"category":"kyoshitsu","polygon":[[37.3,0],[41,0],[41,4],[37.3,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-30","name":"居室230(仮)","floor":2,"category":"kyoshitsu","polygon":[[41,0],[44.7,0],[44.7,4],[41,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-31","name":"居室231(仮)","floor":2,"category":"kyoshitsu","polygon":[[44.7,0],[48.4,0],[48.4,4],[44.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-32","name":"居室232(仮)","floor":2,"category":"kyoshitsu","polygon":[[48.4,0],[52.1,0],[52.1,4],[48.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-33","name":"居室233(仮)","floor":2,"category":"kyoshitsu","polygon":[[52.1,0],[55.8,0],[55.8,4],[52.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"2F-34","name":"居室234(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-35","name":"居室235(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-36","name":"居室236(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-37","name":"居室237(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-38","name":"居室238(仮)","floor":2,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"2F-39","name":"階段室(北西)","floor":2,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"2F-40","name":"倉庫","floor":2,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"2F-41","name":"階段室(北東)","floor":2,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"2F-42","name":"WC","floor":2,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"2F-43","name":"洗濯室","floor":2,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"2F-44","name":"リネン室","floor":2,"category":"backyard","polygon":[[0,0],[4,0],[4,4],[0,4]]},{"id":"2F-45","name":"汚物処理室","floor":2,"category":"backyard","polygon":[[55.8,0],[58,0],[58,4],[55.8,4]]},{"id":"2F-46","name":"階段室(南東)","floor":2,"category":"backyard","polygon":[[58,0],[62,0],[62,4],[58,4]]},{"id":"2F-47","name":"廊下","floor":2,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"2F-48","name":"廊下","floor":2,"category":"corridor","polygon":[[0,4],[62,4],[62,6.3],[0,6.3]]},{"id":"2F-49","name":"廊下","floor":2,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"2F-50","name":"廊下","floor":2,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"2F-51","name":"廊下","floor":2,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"2F-52","name":"廊下","floor":2,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"2F-53","name":"廊下","floor":2,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"2F-54","name":"廊下","floor":2,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"2F-55","name":"廊下","floor":2,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"2F-56","name":"廊下","floor":2,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"2F-57","name":"廊下","floor":2,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"2F-58","name":"廊下","floor":2,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"2F-59","name":"中庭(西)","floor":2,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"2F-60","name":"テラス(東)","floor":2,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"2F-61","name":"階段・EVホール","floor":2,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"2F-62","name":"浴室・脱衣室","floor":2,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"2F-63","name":"セミパブリックスペース","floor":2,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"2F-64","name":"談話コーナー","floor":2,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"2F-65","name":"多目的室(仮)","floor":2,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"2F-66","name":"食堂(仮)","floor":2,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"3F-01","name":"居室301(仮)","floor":3,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-02","name":"居室302(仮)","floor":3,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-03","name":"居室303(仮)","floor":3,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-04","name":"居室304(仮)","floor":3,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-05","name":"居室305(仮)","floor":3,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-06","name":"居室306(仮)","floor":3,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-07","name":"居室307(仮)","floor":3,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-08","name":"居室308(仮)","floor":3,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-09","name":"居室309(仮)","floor":3,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-10","name":"居室310(仮)","floor":3,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-11","name":"居室311(仮)","floor":3,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-12","name":"居室312(仮)","floor":3,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-13","name":"居室313(仮)","floor":3,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-14","name":"居室314(仮)","floor":3,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"3F-15","name":"居室315(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-16","name":"居室316(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-17","name":"居室317(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-18","name":"居室318(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-19","name":"居室319(仮)","floor":3,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"3F-20","name":"居室320(仮)","floor":3,"category":"kyoshitsu","polygon":[[4,0],[7.7,0],[7.7,4],[4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-21","name":"居室321(仮)","floor":3,"category":"kyoshitsu","polygon":[[7.7,0],[11.4,0],[11.4,4],[7.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-22","name":"居室322(仮)","floor":3,"category":"kyoshitsu","polygon":[[11.4,0],[15.1,0],[15.1,4],[11.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-23","name":"居室323(仮)","floor":3,"category":"kyoshitsu","polygon":[[15.1,0],[18.8,0],[18.8,4],[15.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-24","name":"居室324(仮)","floor":3,"category":"kyoshitsu","polygon":[[18.8,0],[22.5,0],[22.5,4],[18.8,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-25","name":"居室325(仮)","floor":3,"category":"kyoshitsu","polygon":[[22.5,0],[26.2,0],[26.2,4],[22.5,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-26","name":"居室326(仮)","floor":3,"category":"kyoshitsu","polygon":[[26.2,0],[29.9,0],[29.9,4],[26.2,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-27","name":"居室327(仮)","floor":3,"category":"kyoshitsu","polygon":[[29.9,0],[33.6,0],[33.6,4],[29.9,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-28","name":"居室328(仮)","floor":3,"category":"kyoshitsu","polygon":[[33.6,0],[37.3,0],[37.3,4],[33.6,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-29","name":"居室329(仮)","floor":3,"category":"kyoshitsu","polygon":[[37.3,0],[41,0],[41,4],[37.3,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-30","name":"居室330(仮)","floor":3,"category":"kyoshitsu","polygon":[[41,0],[44.7,0],[44.7,4],[41,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-31","name":"居室331(仮)","floor":3,"category":"kyoshitsu","polygon":[[44.7,0],[48.4,0],[48.4,4],[44.7,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-32","name":"居室332(仮)","floor":3,"category":"kyoshitsu","polygon":[[48.4,0],[52.1,0],[52.1,4],[48.4,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-33","name":"居室333(仮)","floor":3,"category":"kyoshitsu","polygon":[[52.1,0],[55.8,0],[55.8,4],[52.1,4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":2}]},{"id":"3F-34","name":"居室334(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-35","name":"居室335(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-36","name":"居室336(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-37","name":"居室337(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-38","name":"居室338(仮)","floor":3,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"3F-39","name":"階段室(北西)","floor":3,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"3F-40","name":"倉庫","floor":3,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"3F-41","name":"階段室(北東)","floor":3,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"3F-42","name":"WC","floor":3,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"3F-43","name":"洗濯室","floor":3,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"3F-44","name":"リネン室","floor":3,"category":"backyard","polygon":[[0,0],[4,0],[4,4],[0,4]]},{"id":"3F-45","name":"汚物処理室","floor":3,"category":"backyard","polygon":[[55.8,0],[58,0],[58,4],[55.8,4]]},{"id":"3F-46","name":"階段室(南東)","floor":3,"category":"backyard","polygon":[[58,0],[62,0],[62,4],[58,4]]},{"id":"3F-47","name":"廊下","floor":3,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"3F-48","name":"廊下","floor":3,"category":"corridor","polygon":[[0,4],[62,4],[62,6.3],[0,6.3]]},{"id":"3F-49","name":"廊下","floor":3,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"3F-50","name":"廊下","floor":3,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"3F-51","name":"廊下","floor":3,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"3F-52","name":"廊下","floor":3,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"3F-53","name":"廊下","floor":3,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"3F-54","name":"廊下","floor":3,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"3F-55","name":"廊下","floor":3,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"3F-56","name":"廊下","floor":3,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"3F-57","name":"廊下","floor":3,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"3F-58","name":"廊下","floor":3,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"3F-59","name":"中庭(西)","floor":3,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"3F-60","name":"テラス(東)","floor":3,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"3F-61","name":"階段・EVホール","floor":3,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"3F-62","name":"浴室・脱衣室","floor":3,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"3F-63","name":"セミパブリックスペース","floor":3,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"3F-64","name":"談話コーナー","floor":3,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"3F-65","name":"多目的室(仮)","floor":3,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"3F-66","name":"食堂(仮)","floor":3,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"1F-01","name":"居室101(仮)","floor":1,"category":"kyoshitsu","polygon":[[4,30],[7.7,30],[7.7,34],[4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-02","name":"居室102(仮)","floor":1,"category":"kyoshitsu","polygon":[[7.7,30],[11.4,30],[11.4,34],[7.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-03","name":"居室103(仮)","floor":1,"category":"kyoshitsu","polygon":[[11.4,30],[15.1,30],[15.1,34],[11.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-04","name":"居室104(仮)","floor":1,"category":"kyoshitsu","polygon":[[15.1,30],[18.8,30],[18.8,34],[15.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-05","name":"居室105(仮)","floor":1,"category":"kyoshitsu","polygon":[[18.8,30],[22.5,30],[22.5,34],[18.8,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-06","name":"居室106(仮)","floor":1,"category":"kyoshitsu","polygon":[[22.5,30],[26.2,30],[26.2,34],[22.5,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-07","name":"居室107(仮)","floor":1,"category":"kyoshitsu","polygon":[[26.2,30],[29.9,30],[29.9,34],[26.2,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-08","name":"居室108(仮)","floor":1,"category":"kyoshitsu","polygon":[[29.9,30],[33.6,30],[33.6,34],[29.9,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-09","name":"居室109(仮)","floor":1,"category":"kyoshitsu","polygon":[[33.6,30],[37.3,30],[37.3,34],[33.6,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-10","name":"居室110(仮)","floor":1,"category":"kyoshitsu","polygon":[[37.3,30],[41,30],[41,34],[37.3,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-11","name":"居室111(仮)","floor":1,"category":"kyoshitsu","polygon":[[41,30],[44.7,30],[44.7,34],[41,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-12","name":"居室112(仮)","floor":1,"category":"kyoshitsu","polygon":[[44.7,30],[48.4,30],[48.4,34],[44.7,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-13","name":"居室113(仮)","floor":1,"category":"kyoshitsu","polygon":[[48.4,30],[52.1,30],[52.1,34],[48.4,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-14","name":"居室114(仮)","floor":1,"category":"kyoshitsu","polygon":[[52.1,30],[55.8,30],[55.8,34],[52.1,34]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":0}]},{"id":"1F-15","name":"居室115(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,6.3],[4,6.3],[4,10],[0,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-16","name":"居室116(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,10],[4,10],[4,13.7],[0,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-17","name":"居室117(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,13.7],[4,13.7],[4,17.4],[0,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-18","name":"居室118(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,17.4],[4,17.4],[4,21.1],[0,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-19","name":"居室119(仮)","floor":1,"category":"kyoshitsu","polygon":[[0,21.1],[4,21.1],[4,24.8],[0,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":1}]},{"id":"1F-20","name":"居室120(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-21","name":"居室121(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,10],[62,10],[62,13.7],[58,13.7]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-22","name":"居室122(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,13.7],[62,13.7],[62,17.4],[58,17.4]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-23","name":"居室123(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,17.4],[62,17.4],[62,21.1],[58,21.1]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-24","name":"居室124(仮)","floor":1,"category":"kyoshitsu","polygon":[[58,21.1],[62,21.1],[62,24.8],[58,24.8]],"template":"t_kyo1","openings":[{"type":"door","offset":1.4,"width":0.9,"edge":3}]},{"id":"1F-25","name":"階段室(北西)","floor":1,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"1F-26","name":"倉庫","floor":1,"category":"backyard","polygon":[[55.8,30],[58,30],[58,34],[55.8,34]]},{"id":"1F-27","name":"階段室(北東)","floor":1,"category":"backyard","polygon":[[58,30],[62,30],[62,34],[58,34]]},{"id":"1F-28","name":"WC","floor":1,"category":"kyoyo","polygon":[[0,24.8],[4,24.8],[4,27.7],[0,27.7]]},{"id":"1F-29","name":"洗濯室","floor":1,"category":"backyard","polygon":[[58,24.8],[62,24.8],[62,27.7],[58,27.7]]},{"id":"1F-30","name":"廊下","floor":1,"category":"corridor","polygon":[[0,27.7],[62,27.7],[62,30],[0,30]]},{"id":"1F-31","name":"廊下","floor":1,"category":"corridor","polygon":[[4,6.3],[6.3,6.3],[6.3,27.7],[4,27.7]]},{"id":"1F-32","name":"廊下","floor":1,"category":"corridor","polygon":[[55.7,6.3],[58,6.3],[58,27.7],[55.7,27.7]]},{"id":"1F-33","name":"廊下","floor":1,"category":"corridor","polygon":[[6.3,6.3],[8,6.3],[8,27.7],[6.3,27.7]]},{"id":"1F-34","name":"廊下","floor":1,"category":"corridor","polygon":[[8,6.3],[19.7,6.3],[19.7,8.6],[8,8.6]]},{"id":"1F-35","name":"廊下","floor":1,"category":"corridor","polygon":[[8,18.4],[19.7,18.4],[19.7,20.7],[8,20.7]]},{"id":"1F-36","name":"廊下","floor":1,"category":"corridor","polygon":[[19.7,6.3],[22,6.3],[22,27.7],[19.7,27.7]]},{"id":"1F-37","name":"廊下","floor":1,"category":"corridor","polygon":[[34,6.3],[36,6.3],[36,27.7],[34,27.7]]},{"id":"1F-38","name":"廊下","floor":1,"category":"corridor","polygon":[[36,6.3],[53.15,6.3],[53.15,8.6],[36,8.6]]},{"id":"1F-39","name":"廊下","floor":1,"category":"corridor","polygon":[[36,14.15],[53.15,14.15],[53.15,16.45],[36,16.45]]},{"id":"1F-40","name":"廊下","floor":1,"category":"corridor","polygon":[[53.15,6.3],[55.7,6.3],[55.7,27.7],[53.15,27.7]]},{"id":"1F-41","name":"中庭(西)","floor":1,"category":"courtyard","polygon":[[8,8.6],[19.7,8.6],[19.7,18.4],[8,18.4]]},{"id":"1F-42","name":"テラス(東)","floor":1,"category":"courtyard","polygon":[[36,8.6],[53.15,8.6],[53.15,14.15],[36,14.15]]},{"id":"1F-43","name":"階段・EVホール","floor":1,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"1F-44","name":"浴室・脱衣室","floor":1,"category":"kyoyo","polygon":[[28,6.3],[34,6.3],[34,12],[28,12]]},{"id":"1F-45","name":"セミパブリックスペース","floor":1,"category":"kyoyo","polygon":[[22,12],[34,12],[34,22.6],[22,22.6]],"items":[{"type":"sofa","pos":[1,1],"rot":0,"procure":"new"},{"type":"sofa","pos":[1,4],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,3],"rot":0,"procure":"new"},{"type":"tv55","pos":[5,9.9],"rot":180,"procure":"new"}]},{"id":"1F-46","name":"談話コーナー","floor":1,"category":"kyoyo","polygon":[[22,22.6],[34,22.6],[34,27.7],[22,27.7]],"items":[{"type":"sofa","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"sofa","pos":[6,1.5],"rot":0,"procure":"new"}]},{"id":"1F-47","name":"機能訓練室(仮)","floor":1,"category":"kyoyo","polygon":[[8,20.7],[19.7,20.7],[19.7,27.7],[8,27.7]],"items":[{"type":"din_set","pos":[1.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[6.5,1.5],"rot":0,"procure":"new"}]},{"id":"1F-48","name":"食堂(仮)","floor":1,"category":"kyoyo","polygon":[[36,16.45],[53.15,16.45],[53.15,27.7],[36,27.7]],"items":[{"type":"din_set","pos":[1,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[1,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[4.5,5.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[8,5.5],"rot":0,"procure":"new"},{"type":"tv55","pos":[12.5,0.3],"rot":0,"procure":"reuse","origin":"現施設食堂"}]},{"id":"1F-49","name":"デイサービス室(仮)","floor":1,"category":"kyoyo","polygon":[[0,0],[16,0],[16,6.3],[0,6.3]],"items":[{"type":"din_set","pos":[2,1.5],"rot":0,"procure":"new"},{"type":"din_set","pos":[7,1.5],"rot":0,"procure":"new"}]},{"id":"1F-50","name":"エントランスホール","floor":1,"category":"kyoyo","polygon":[[16,0],[30,0],[30,6.3],[16,6.3]],"items":[{"type":"sofa","pos":[3,2],"rot":0,"procure":"new"},{"type":"sofa","pos":[8,2],"rot":0,"procure":"new"}]},{"id":"1F-51","name":"事務室","floor":1,"category":"backyard","polygon":[[30,0],[40,0],[40,6.3],[30,6.3]],"items":[{"type":"chair","pos":[1,1],"rot":0,"procure":"new"},{"type":"chair","pos":[1.9,1],"rot":0,"procure":"new"},{"type":"chair","pos":[2.8,1],"rot":0,"procure":"new"},{"type":"chair","pos":[3.7,1],"rot":0,"procure":"new"},{"type":"chair","pos":[4.6,1],"rot":0,"procure":"new"},{"type":"chair","pos":[5.5,1],"rot":0,"procure":"new"}]},{"id":"1F-52","name":"医務室(仮)","floor":1,"category":"kyoyo","polygon":[[40,0],[46,0],[46,6.3],[40,6.3]],"items":[{"type":"kaigo_bed","pos":[0.4,0.5],"rot":0,"procure":"new"},{"type":"chair","pos":[2.5,1],"rot":0,"procure":"new"}]},{"id":"1F-53","name":"厨房","floor":1,"category":"backyard","polygon":[[46,0],[58,0],[58,6.3],[46,6.3]],"items":[{"type":"fridge","pos":[0.3,0.3],"rot":0,"procure":"new"},{"type":"fridge","pos":[1.2,0.3],"rot":0,"procure":"new"}]},{"id":"1F-54","name":"階段室(南東)","floor":1,"category":"backyard","polygon":[[58,0],[62,0],[62,6.3],[58,6.3]]},{"id":"4F-01","name":"塔屋(EV機械室・階段)","floor":4,"category":"backyard","polygon":[[22,6.3],[28,6.3],[28,12],[22,12]]},{"id":"4F-02","name":"階段室(北西)","floor":4,"category":"backyard","polygon":[[0,30],[4,30],[4,34],[0,34]]},{"id":"4F-03","name":"階段室(南東)","floor":4,"category":"backyard","polygon":[[58,6.3],[62,6.3],[62,10],[58,10]]},{"id":"4F-04","name":"屋上緑化(仮)","floor":4,"category":"courtyard","polygon":[[8,8.6],[20,8.6],[20,18.4],[8,18.4]]},{"id":"4F-05","name":"屋上緑化(仮)","floor":4,"category":"courtyard","polygon":[[36,8.6],[53,8.6],[53,14.15],[36,14.15]]},{"id":"4F-06","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[0,0],[62,0],[62,6.3],[0,6.3]]},{"id":"4F-07","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[0,6.3],[8,6.3],[8,30],[0,30]]},{"id":"4F-08","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[4,30],[8,30],[8,34],[4,34]]},{"id":"4F-09","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[8,18.4],[58,18.4],[58,34],[8,34]]},{"id":"4F-10","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[58,18.4],[62,18.4],[62,34],[58,34]]},{"id":"4F-11","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[20,6.3],[22,6.3],[22,18.4],[20,18.4]]},{"id":"4F-12","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[28,6.3],[36,6.3],[36,18.4],[28,18.4]]},{"id":"4F-13","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[22,12],[28,12],[28,18.4],[22,18.4]]},{"id":"4F-14","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[36,14.15],[58,14.15],[58,18.4],[36,18.4]]},{"id":"4F-15","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[8,6.3],[20,6.3],[20,8.6],[8,8.6]]},{"id":"4F-16","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[36,6.3],[53,6.3],[53,8.6],[36,8.6]]},{"id":"4F-17","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[53,6.3],[58,6.3],[58,14.15],[53,14.15]]},{"id":"4F-18","name":"屋上デッキ","floor":4,"category":"corridor","polygon":[[58,10],[62,10],[62,18.4],[58,18.4]]}]};</script>
 <script>(function () {
   'use strict';
 
@@ -1544,6 +1545,10 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
   var GRID_SNAP_M = 0.05;
   var UNDO_MAX = 50;
   var CLICK_MOVE_THRESHOLD = 5;
+  var DIM_COLOR = '#333333'; // v0.5 A2C-3: 暗転スポットライトの非該当色（明度20%程度）
+  var PULSE_PERIOD_MS = 1000; // v0.5 A2C-3: 該当備品の明滅周期
+  var WALK_EYE_HEIGHT = 1.5; // v0.5 A2C-7: ウォークスルー視点の床上高さ
+  var WALK_SPEED_MPS = 3.2;
 
   // ---------------------------------------------------------------
   // state
@@ -1582,6 +1587,13 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
   var geometryCache = {};
   var materialCache = {};
   var dragPlane = null; // created after THREE is available
+  var pulseMaterials = []; // v0.5 A2C-3: 明滅対象マテリアル（rebuildSceneのたびに再構築）
+
+  // v0.5 A2C-7: ウォークスルーモード状態
+  var walkMode = false;
+  var walkYaw = 0, walkPitch = 0;
+  var walkTarget = null; // THREE.Vector3 | null（クリック移動の目標地点）
+  var walkLookDrag = null;
 
   // ---------------------------------------------------------------
   // utils
@@ -1774,12 +1786,15 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     controls.maxDistance = 300;
     controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.PAN };
 
-    var hemi = new THREE.HemisphereLight(0xffffff, 0x8a8f96, 0.65);
+    // v0.5: 従来の光量合計は淡い部屋色（roomCategories.color）を白飛びさせていた
+    // （A1-4「床がroomCategoryの色で塗られる」に反する）。俯瞰では目立たなかったが、
+    // ウォークスルーで床を見下ろすと顕著だったため、白飛びしない範囲まで光量を落とす。
+    var hemi = new THREE.HemisphereLight(0xffffff, 0x8a8f96, 0.42);
     scene.add(hemi);
-    var dir = new THREE.DirectionalLight(0xffffff, 0.75);
+    var dir = new THREE.DirectionalLight(0xffffff, 0.48);
     dir.position.set(30, 60, 20);
     scene.add(dir);
-    var dir2 = new THREE.DirectionalLight(0xffffff, 0.25);
+    var dir2 = new THREE.DirectionalLight(0xffffff, 0.16);
     dir2.position.set(-20, 30, -30);
     scene.add(dir2);
 
@@ -1804,9 +1819,18 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
 
   function animate() {
     requestAnimationFrame(animate);
-    controls.update();
+    if (walkMode) { updateWalkCamera(); } else { controls.update(); }
+    updatePulseMaterials();
     updateLabelVisibility();
     renderer.render(scene, camera);
+  }
+
+  // v0.5 A2C-3: 該当備品のゆっくりした明滅（周期約1秒）
+  function updatePulseMaterials() {
+    if (pulseMaterials.length === 0) return;
+    var t = (Date.now() % PULSE_PERIOD_MS) / PULSE_PERIOD_MS;
+    var pulse = 0.55 + 0.45 * Math.sin(t * Math.PI * 2);
+    for (var i = 0; i < pulseMaterials.length; i++) pulseMaterials[i].emissiveIntensity = pulse;
   }
 
   function updateLabelVisibility() {
@@ -1877,10 +1901,24 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
 
     dom.addEventListener('pointerdown', function (e) {
       downX = e.clientX; downY = e.clientY; downT = Date.now();
+      if (walkMode && e.button === 0) walkLookDrag = { lastX: e.clientX, lastY: e.clientY };
+    });
+    dom.addEventListener('pointermove', function (e) {
+      if (!walkMode || !walkLookDrag) return;
+      var dx = e.clientX - walkLookDrag.lastX, dy = e.clientY - walkLookDrag.lastY;
+      walkLookDrag.lastX = e.clientX; walkLookDrag.lastY = e.clientY;
+      walkYaw -= dx * 0.006;
+      walkPitch -= dy * 0.006;
+      walkPitch = Math.max(-1.3, Math.min(1.3, walkPitch));
     });
     dom.addEventListener('pointerup', function (e) {
       var dx = e.clientX - downX, dy = e.clientY - downY;
       var moved = Math.sqrt(dx * dx + dy * dy);
+      if (walkMode) {
+        walkLookDrag = null;
+        if (moved <= CLICK_MOVE_THRESHOLD && e.button === 0) walkClickMove(e);
+        return;
+      }
       if (moved > CLICK_MOVE_THRESHOLD || Date.now() - downT > 600) return; // treat as drag, not click
       if (e.button !== 0) return;
       handleClick(e);
@@ -1967,6 +2005,28 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     return mesh;
   }
 
+  // v0.5: ウォークスルーで見下ろした際に床が単色で「何も無い」ように見えないよう、
+  // 床の色自体には手を触れず、薄いグリッド線を別レイヤーとして重ねる（1m間隔）。
+  function buildFloorGridLines(roomBBox) {
+    var step = 1.0;
+    var y = 0.006;
+    var pts = [];
+    var startX = Math.ceil(roomBBox.minX / step) * step;
+    for (var gx = startX; gx <= roomBBox.maxX; gx += step) {
+      pts.push(new THREE.Vector3(gx, y, -roomBBox.minY), new THREE.Vector3(gx, y, -roomBBox.maxY));
+    }
+    var startY = Math.ceil(roomBBox.minY / step) * step;
+    for (var gy = startY; gy <= roomBBox.maxY; gy += step) {
+      pts.push(new THREE.Vector3(roomBBox.minX, y, -gy), new THREE.Vector3(roomBBox.maxX, y, -gy));
+    }
+    if (pts.length === 0) return null;
+    var geo = new THREE.BufferGeometry().setFromPoints(pts);
+    var mat = getMaterial('floorgrid', function () {
+      return new THREE.LineBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.08 });
+    });
+    return new THREE.LineSegments(geo, mat);
+  }
+
   function buildOutline(room) {
     var pts = room.polygon.map(function (p) { return new THREE.Vector3(p[0], 0.03, -p[1]); });
     pts.push(pts[0]);
@@ -2001,8 +2061,10 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
       if (!openingsByEdge[op.edge]) openingsByEdge[op.edge] = [];
       openingsByEdge[op.edge].push(op);
     });
-    var solidMat = getMaterial('wall|' + wallColor, function () {
-      return new THREE.MeshStandardMaterial({ color: wallColor, roughness: 0.9, side: THREE.DoubleSide });
+    // v0.5 A2C-5: 全高モードは半透明にして、俯瞰視点でも室内の備品が見えるようにする
+    var solidMat = getMaterial('wall|' + wallColor + '|' + wallMode, function () {
+      var isFull = wallMode === 'full';
+      return new THREE.MeshStandardMaterial({ color: wallColor, roughness: 0.9, side: THREE.DoubleSide, transparent: isFull, opacity: isFull ? 0.55 : 1 });
     });
     var glassMat = getMaterial('glass', function () {
       return new THREE.MeshStandardMaterial({ color: 0xbfe0f2, transparent: true, opacity: 0.35, roughness: 0.2, side: THREE.DoubleSide });
@@ -2032,6 +2094,86 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     }
   }
 
+  // ---------------------------------------------------------------
+  // v0.5 A2C-1: 備品のカテゴリ別ローポリ形状。
+  // 座標系は旧・単一ボックスと同じ占有範囲（x:[0,w] y:[0,h] z:[-d,0]）に収める。
+  // 未対応typeIdは呼び出し側で従来の単一ボックスにフォールバックする。
+  // ---------------------------------------------------------------
+  function addBoxPart(target, mat, w, h, d, cx, cy, cz) {
+    var geo = getGeometry('shapebox|' + w.toFixed(3) + '|' + h.toFixed(3) + '|' + d.toFixed(3), function () {
+      return new THREE.BoxGeometry(w, h, d);
+    });
+    var mesh = new THREE.Mesh(geo, mat);
+    mesh.position.set(cx, cy, cz);
+    target.add(mesh);
+  }
+  function addCylinderPart(target, mat, r, h, cx, cy, cz) {
+    var geo = getGeometry('shapecyl|' + r.toFixed(3) + '|' + h.toFixed(3), function () {
+      return new THREE.CylinderGeometry(r, r, h, 8);
+    });
+    var mesh = new THREE.Mesh(geo, mat);
+    mesh.position.set(cx, cy, cz);
+    target.add(mesh);
+  }
+
+  var ITEM_SHAPE_BUILDERS = {
+    kaigo_bed: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.95, h * 0.30, d * 0.95, w / 2, h * 0.15, -d / 2);
+      addBoxPart(g, mat, w * 0.90, h * 0.45, d * 0.82, w / 2, h * 0.30 + h * 0.225, -d / 2);
+      addBoxPart(g, accent, w * 0.70, h * 0.22, d * 0.14, w / 2, h * 0.75 + h * 0.11, -d * 0.10);
+    },
+    locker: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.96, h * 0.98, d * 0.96, w / 2, h / 2, -d / 2);
+      addBoxPart(g, accent, w * 0.03, h * 0.7, 0.012, w / 2, h * 0.5, -0.006);
+      addBoxPart(g, accent, 0.05, 0.12, 0.05, w * 0.75, h * 0.5, -0.02);
+    },
+    ob_table: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.95, h * 0.08, d * 0.95, w / 2, h - h * 0.04, -d / 2);
+      addCylinderPart(g, accent, 0.03, h * 0.75, w / 2, h * 0.4, -d / 2);
+      addBoxPart(g, accent, w * 0.5, h * 0.05, d * 0.5, w / 2, h * 0.025, -d / 2);
+    },
+    din_set: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.95, h * 0.1, d * 0.95, w / 2, h - h * 0.05, -d / 2);
+      var lx = w * 0.12, lz = d * 0.12, legH = h * 0.85;
+      [[lx, -lz], [w - lx, -lz], [lx, -(d - lz)], [w - lx, -(d - lz)]].forEach(function (p) {
+        addCylinderPart(g, accent, 0.035, legH, p[0], legH / 2, p[1]);
+      });
+    },
+    sofa: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.9, h * 0.35, d * 0.85, w / 2, h * 0.15 + h * 0.175, -d / 2);
+      addBoxPart(g, mat, w * 0.9, h * 0.55, d * 0.18, w / 2, h - h * 0.275, -d * 0.09);
+      addBoxPart(g, accent, w * 0.10, h * 0.5, d * 0.8, w * 0.06, h * 0.25 + h * 0.15, -d / 2);
+      addBoxPart(g, accent, w * 0.10, h * 0.5, d * 0.8, w * 0.94, h * 0.25 + h * 0.15, -d / 2);
+    },
+    chair: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.8, h * 0.08, d * 0.8, w / 2, h * 0.45, -d / 2);
+      addBoxPart(g, mat, w * 0.75, h * 0.45, 0.06, w / 2, h * 0.45 + h * 0.225, -d * 0.06);
+      addCylinderPart(g, accent, 0.03, h * 0.45, w / 2, h * 0.225, -d / 2);
+      addCylinderPart(g, accent, 0.16, 0.03, w / 2, 0.015, -d / 2);
+    },
+    tv55: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.95, h * 0.65, 0.05, w / 2, h * 0.32 + h * 0.325, -d * 0.92);
+      addBoxPart(g, accent, 0.08, 0.08, d * 0.7, w / 2, h * 0.55, -d * 0.5);
+    },
+    fridge: function (g, w, d, h, mat, accent) {
+      addBoxPart(g, mat, w * 0.96, h * 0.98, d * 0.96, w / 2, h / 2, -d / 2);
+      addBoxPart(g, accent, w * 0.9, 0.03, 0.02, w / 2, h * 0.35, -0.01);
+      addBoxPart(g, accent, 0.04, h * 0.3, 0.04, w * 0.85, h * 0.6, -0.02);
+    }
+  };
+
+  function buildItemShape(typeId, w, d, h, mat, accent) {
+    var group = new THREE.Group();
+    var builder = ITEM_SHAPE_BUILDERS[typeId];
+    if (builder) {
+      builder(group, w, d, h, mat, accent);
+    } else {
+      // A2C-1: 未定義カテゴリは従来の箱にフォールバック
+      addBoxPart(group, mat, w, h, d, w / 2, h / 2, -d / 2);
+    }
+    return group;
+  }
+
   function buildItem(room, itemInst, itemIndex, roomBBox, group) {
     var resolved = resolveItem(itemInst);
     if (!resolved) return;
@@ -2045,7 +2187,8 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     var isExcluded = itemInst.status === 'excluded'; // A3-8: 査定対象外はゴースト表示
 
     var color = (mode === 'budget' && isReuse) ? REUSE_COLOR : resolved.categoryColor;
-    if (itemHighlightActive && !isItemMatch) color = mixColor(color, '#9a9a9a', 0.7); // 埋もれさせないため非該当を彩度ダウン
+    // v0.5 A2C-3: 品目ハイライト中の非該当は「暗転スポットライト」で明度を強く落とす（旧：彩度ダウンのみ）
+    if (itemHighlightActive && !isItemMatch) color = DIM_COLOR;
     if (isEditSelected) color = mixColor(color, ACCENT, 0.55);
     var w = type.size[0], d = type.size[1], h = type.size[2];
 
@@ -2056,9 +2199,6 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     pivot.position.set(worldX, 0, -worldY);
     pivot.rotation.y = THREE.MathUtils.degToRad(itemInst.rot || 0);
 
-    var geo = getGeometry('box|' + w + '|' + d + '|' + h, function () {
-      return new THREE.BoxGeometry(w, h, d);
-    });
     var matKey = 'item|' + color + (isItemMatch ? '|glow' : '') + (isExcluded ? '|excluded' : '');
     var mat = getMaterial(matKey, function () {
       var m = new THREE.MeshStandardMaterial({ color: color, roughness: 0.85 });
@@ -2066,17 +2206,37 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
       if (isExcluded) { m.transparent = true; m.opacity = 0.35; }
       return m;
     });
-    var mesh = new THREE.Mesh(geo, mat);
-    mesh.position.set(w / 2, h / 2, -d / 2);
-    mesh.userData.roomId = room.id;
-    mesh.userData.itemIndex = itemIndex;
-    mesh.userData.pivot = pivot;
-    mesh.userData.roomBBoxMin = { x: roomBBox.minX, y: roomBBox.minY };
-    pivot.add(mesh);
-    itemPickMeshes.push(mesh);
+    if (isItemMatch && pulseMaterials.indexOf(mat) === -1) pulseMaterials.push(mat);
+
+    var accentKey = 'item-accent|' + color + (isExcluded ? '|excluded' : '');
+    var accentMat = getMaterial(accentKey, function () {
+      var m = new THREE.MeshStandardMaterial({ color: darken(color, 0.55), roughness: 0.85 });
+      if (isExcluded) { m.transparent = true; m.opacity = 0.35; }
+      return m;
+    });
+
+    // A2C-1: カテゴリ別ローポリ形状（未対応typeIdは箱にフォールバック）。見た目のみで、当たり判定には使わない。
+    var shapeGroup = buildItemShape(type.id, w, d, h, mat, accentMat);
+    pivot.add(shapeGroup);
+
+    // 当たり判定・ドラッグ・BoxHelper用の透明プロキシ（従来のボックスと同じ占有範囲）
+    var pickGeo = getGeometry('box|' + w + '|' + d + '|' + h, function () {
+      return new THREE.BoxGeometry(w, h, d);
+    });
+    var pickMat = getMaterial('pick-proxy-invisible', function () {
+      return new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false });
+    });
+    var pickMesh = new THREE.Mesh(pickGeo, pickMat);
+    pickMesh.position.set(w / 2, h / 2, -d / 2);
+    pickMesh.userData.roomId = room.id;
+    pickMesh.userData.itemIndex = itemIndex;
+    pickMesh.userData.pivot = pivot;
+    pickMesh.userData.roomBBoxMin = { x: roomBBox.minX, y: roomBBox.minY };
+    pivot.add(pickMesh);
+    itemPickMeshes.push(pickMesh);
 
     if (isEditSelected || isItemMatch) {
-      var helper = new THREE.BoxHelper(mesh, new THREE.Color(ACCENT));
+      var helper = new THREE.BoxHelper(pickMesh, new THREE.Color(ACCENT));
       pivot.add(helper);
     }
 
@@ -2100,6 +2260,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     itemLabelSprites = [];
     floorPickMeshes = [];
     itemPickMeshes = [];
+    pulseMaterials = [];
 
     var rooms = idx.roomsByFloor[currentFloor] || [];
     var emptyMsg = document.getElementById('emptyFloorMsg');
@@ -2112,16 +2273,39 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
 
     var wallHeight = wallMode === 'waist' ? 1.2 : 2.4;
 
+    // v0.5 A2C-3/4: 品目ハイライト中は暗転スポットライトを最優先（ヒートマップより優先）。
+    // 対象品目を1つも含まない部屋は暗く沈め、含む部屋は通常表示のまま（該当備品の場所がわかるように）。
+    var itemHighlightActive = !!(searchState && searchState.type === 'item');
+    var highlightIdSet = null;
+    if (itemHighlightActive) {
+      highlightIdSet = {};
+      searchState.typeIds.forEach(function (id) { highlightIdSet[id] = true; });
+    }
+    var legendEl = document.getElementById('heatmapLegend');
+    if (legendEl) legendEl.style.display = (heatmapOn && !itemHighlightActive) ? 'block' : 'none';
+
     rooms.forEach(function (room) {
       var cat = idx.roomCategories[room.category];
       var baseColor = cat ? cat.color : '#cccccc';
-      if (heatmapOn) baseColor = heatmapColorForRoom(room.id);
       var isSelected = room.id === selectedRoomId;
-      var fillColor = isSelected ? mixColor(baseColor, ACCENT, 0.45) : baseColor;
+      var wallBase;
+      if (itemHighlightActive) {
+        var hasMatch = getRoomItems(room).some(function (it) { return highlightIdSet[it.type]; });
+        wallBase = hasMatch ? baseColor : DIM_COLOR;
+      } else {
+        if (heatmapOn) baseColor = heatmapColorForRoom(room.id);
+        wallBase = baseColor;
+      }
+      var fillColor = isSelected ? mixColor(wallBase, ACCENT, itemHighlightActive ? 0.3 : 0.45) : wallBase;
+
+      var roomBBox = polygonBBox(room.polygon);
 
       var floorMesh = buildFloorMesh(room, fillColor);
       floorGroup.add(floorMesh);
       floorPickMeshes.push(floorMesh);
+
+      var gridLines = buildFloorGridLines(roomBBox);
+      if (gridLines) floorGroup.add(gridLines);
 
       if (isSelected) {
         floorGroup.add(buildOutline(room));
@@ -2129,7 +2313,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
 
       var noWalls = room.category === 'corridor' || room.category === 'courtyard';
       if (!noWalls) {
-        var wallColor = darken(baseColor, 0.55);
+        var wallColor = darken(wallBase, 0.55);
         buildWalls(room, wallColor, wallHeight, floorGroup);
       }
 
@@ -2140,7 +2324,6 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
       floorGroup.add(nameLabel);
       roomLabelSprites.push(nameLabel);
 
-      var roomBBox = polygonBBox(room.polygon);
       getRoomItems(room).forEach(function (it, i) {
         buildItem(room, it, i, roomBBox, floorGroup);
       });
@@ -2368,6 +2551,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
   }
 
   function frameOblique(bbox, scaleMul) {
+    if (walkMode) exitWalkMode(); // v0.5: カメラジャンプ系の入口を一箇所に集約し、検索等で確実に俯瞰へ戻す
     scaleMul = scaleMul || 1;
     var radius = (Math.max(bbox.sizeX, bbox.sizeY, 4) * 0.85 + 6) * scaleMul;
     var elevRad = THREE.MathUtils.degToRad(40);
@@ -2383,6 +2567,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
   }
 
   function frameTopDown(bbox) {
+    if (walkMode) exitWalkMode();
     var radius = Math.max(bbox.sizeX, bbox.sizeY, 4) * 0.95 + 4;
     camera.position.set(bbox.cx + 0.001, radius, -bbox.cy + 0.001);
     controls.target.set(bbox.cx, 0, -bbox.cy);
@@ -2412,6 +2597,90 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     });
     var bbox = { minX: minX, minY: minY, maxX: maxX, maxY: maxY, cx: (minX + maxX) / 2, cy: (minY + maxY) / 2, sizeX: maxX - minX, sizeY: maxY - minY };
     frameOblique(bbox, 0.55);
+  }
+
+  // ---------------------------------------------------------------
+  // v0.5 A2C-7/8: ウォークスルーモード（床上視点・マウス操作のみで完結）
+  // ---------------------------------------------------------------
+  var walkLastFrameTime = null;
+
+  function updateWalkUI() {
+    var btn = document.getElementById('btnWalkMode');
+    if (!btn) return;
+    btn.textContent = walkMode ? '俯瞰に戻る' : 'ウォークスルー';
+    btn.classList.toggle('active', walkMode);
+    btn.disabled = mode === 'edit';
+  }
+
+  function walkHintText() {
+    return 'ウォークスルー：ドラッグで見回し／床クリックで移動／「俯瞰に戻る」で復帰';
+  }
+
+  function enterWalkMode() {
+    if (mode === 'edit' || walkMode) return; // 編集モードとの操作競合を避ける（実装裁量）
+    walkMode = true;
+    walkLastFrameTime = null;
+    walkTarget = null;
+    controls.enabled = false;
+    camera.position.set(controls.target.x, WALK_EYE_HEIGHT, controls.target.z);
+    var dir = new THREE.Vector3();
+    camera.getWorldDirection(dir);
+    walkYaw = Math.atan2(dir.x, dir.z);
+    walkPitch = 0;
+    updateWalkUI();
+    var hint = document.getElementById('hint');
+    if (hint) hint.textContent = walkHintText();
+  }
+
+  function exitWalkMode() {
+    if (!walkMode) return;
+    walkMode = false;
+    walkTarget = null;
+    walkLookDrag = null;
+    controls.enabled = true;
+    applyCameraPreset('default');
+    updateWalkUI();
+    var hint = document.getElementById('hint');
+    if (hint) hint.textContent = mode === 'edit'
+      ? '編集モード：備品をドラッグで移動／選択してRキーで90°回転／Ctrl+Zで取り消し'
+      : '左ドラッグ：回転 ／ ホイール：ズーム ／ 右ドラッグ：パン ／ 部屋クリック：詳細表示';
+  }
+
+  function walkClickMove(e) {
+    raycaster.setFromCamera(mouseNdc(e), camera);
+    var hits = raycaster.intersectObjects(floorPickMeshes, false);
+    if (hits.length === 0) return;
+    var p = hits[0].point;
+    walkTarget = new THREE.Vector3(p.x, WALK_EYE_HEIGHT, p.z);
+  }
+
+  function updateWalkCamera() {
+    var now = performance.now();
+    var dt = walkLastFrameTime ? Math.min(0.1, (now - walkLastFrameTime) / 1000) : 0;
+    walkLastFrameTime = now;
+
+    camera.rotation.order = 'YXZ';
+    camera.rotation.set(walkPitch, walkYaw, 0);
+
+    if (walkTarget) {
+      var pos = camera.position;
+      var dx = walkTarget.x - pos.x, dz = walkTarget.z - pos.z;
+      var dist = Math.sqrt(dx * dx + dz * dz);
+      if (dist < 0.08) {
+        walkTarget = null;
+      } else {
+        var step = Math.min(dist, WALK_SPEED_MPS * dt);
+        pos.x += (dx / dist) * step;
+        pos.z += (dz / dist) * step;
+      }
+    }
+    camera.position.y = WALK_EYE_HEIGHT; // 床下に落ちない
+
+    // A2C-8: 施設外へ無限に出ていかないための簡易境界クランプ
+    var bbox = computeFloorBBox(currentFloor);
+    var margin = 3;
+    camera.position.x = Math.max(bbox.minX - margin, Math.min(bbox.maxX + margin, camera.position.x));
+    camera.position.z = Math.max(-bbox.maxY - margin, Math.min(-bbox.minY + margin, camera.position.z));
   }
 
   // ---------------------------------------------------------------
@@ -2739,12 +3008,13 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     updateEditStatus();
   }
 
-  // 階ナビボタンからの明示的な切替（選択解除＋既定カメラに戻す）
+  // 階ナビボタンからの明示的な切替（選択解除＋既定カメラに戻す）。
+  // A2C-8: ウォークスルー中は床上視点を維持したまま階のデータだけ切り替える。
   function switchFloor(level) {
     switchFloorSilent(level);
     selectedRoomId = null;
     rebuildScene();
-    applyCameraPreset('default');
+    if (!walkMode) applyCameraPreset('default');
     renderPanel();
   }
 
@@ -3166,18 +3436,20 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
   function setMode(newMode) {
     if (editDrag) { endItemDrag(); }
     if (mode === 'edit' && newMode !== 'edit') { editSelectedItem = null; controls.enabled = true; }
+    if (newMode === 'edit' && walkMode) exitWalkMode(); // A2C-7: 編集モードとウォークスルーは併用しない
     mode = newMode;
     document.getElementById('btnModeView').classList.toggle('active', mode === 'view');
     document.getElementById('btnModeBudget').classList.toggle('active', mode === 'budget');
     document.getElementById('btnModeEdit').classList.toggle('active', mode === 'edit');
     document.getElementById('budgetControls').style.display = mode === 'budget' ? 'flex' : 'none';
     document.getElementById('editControls').style.display = mode === 'edit' ? 'flex' : 'none';
-    document.getElementById('hint').textContent = mode === 'edit'
+    document.getElementById('hint').textContent = walkMode ? walkHintText() : (mode === 'edit'
       ? '編集モード：備品をドラッグで移動／選択してRキーで90°回転／Ctrl+Zで取り消し'
-      : '左ドラッグ：回転 ／ ホイール：ズーム ／ 右ドラッグ：パン ／ 部屋クリック：詳細表示';
+      : '左ドラッグ：回転 ／ ホイール：ズーム ／ 右ドラッグ：パン ／ 部屋クリック：詳細表示');
     if (mode !== 'budget') panelTab = 'room';
     updatePanelTabs();
     updateEditStatus();
+    updateWalkUI();
     rebuildScene();
     renderPanel();
   }
@@ -3198,6 +3470,7 @@ table.itemTable tr.clickableRow:hover td { background: #fff3e6; }
     document.getElementById('btnCamOverview').addEventListener('click', function () { applyCameraPreset('overview'); });
     document.getElementById('btnCamTop').addEventListener('click', function () { applyCameraPreset('top'); });
     document.getElementById('btnCamOblique').addEventListener('click', function () { applyCameraPreset('default'); });
+    document.getElementById('btnWalkMode').addEventListener('click', function () { if (walkMode) exitWalkMode(); else enterWalkMode(); });
     document.getElementById('btnPng').addEventListener('click', exportPng);
     document.getElementById('btnCsv').addEventListener('click', exportCsv);
     document.getElementById('newOnlyToggle').addEventListener('change', function (e) {
